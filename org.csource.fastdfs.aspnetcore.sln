@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "org.csource.fastdfs.aspnetcore", "org.csource.fastdfs.aspnetcore\org.csource.fastdfs.aspnetcore.csproj", "{66B67962-8617-458B-B6F3-33A066AA73C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "org.csource.fastdfs.aspnetcore.samples", "org.csource.fastdfs.aspnetcore.samples\org.csource.fastdfs.aspnetcore.samples.csproj", "{571E4974-DCCF-410B-BC8D-2FCA83EBA182}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66B67962-8617-458B-B6F3-33A066AA73C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66B67962-8617-458B-B6F3-33A066AA73C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66B67962-8617-458B-B6F3-33A066AA73C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66B67962-8617-458B-B6F3-33A066AA73C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{571E4974-DCCF-410B-BC8D-2FCA83EBA182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{571E4974-DCCF-410B-BC8D-2FCA83EBA182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{571E4974-DCCF-410B-BC8D-2FCA83EBA182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{571E4974-DCCF-410B-BC8D-2FCA83EBA182}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFF236A2-820E-490B-9AF7-6E5F4D9C592E}
+	EndGlobalSection
+EndGlobal
