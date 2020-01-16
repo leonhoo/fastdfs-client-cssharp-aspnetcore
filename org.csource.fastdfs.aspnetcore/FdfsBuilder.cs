@@ -36,6 +36,18 @@ namespace org.csource.fastdfs.aspnetcore
             if (options.TrackerHttpPort != null)
                 fdfsConfig.TrackerHttpPort = options.TrackerHttpPort.Value;
 
+            if (options.ConnectionPoolEnabled != null)
+                fdfsConfig.ConnectionPoolEnabled = options.ConnectionPoolEnabled.Value;
+
+            if (options.ConnectionPoolMaxCountPerEntry != null)
+                fdfsConfig.ConnectionPoolMaxCountPerEntry = options.ConnectionPoolMaxCountPerEntry.Value;
+
+            if (options.ConnectionPoolMaxIdleTime != null)
+                fdfsConfig.ConnectionPoolMaxIdleTime = options.ConnectionPoolMaxIdleTime.Value;
+
+            if (options.ConnectionPoolMaxWaitTime != null)
+                fdfsConfig.ConnectionPoolMaxWaitTime = options.ConnectionPoolMaxWaitTime.Value;
+
             ClientGlobal.init(fdfsConfig);
         }
     }

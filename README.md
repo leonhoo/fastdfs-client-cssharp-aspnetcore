@@ -1,19 +1,31 @@
 # fastdfs-client-cssharp-aspnetcore
 fastdfs client extensions for asp.netcore
 
-1. append appsettings.json 
+Please visit:
+https://github.com/leonhoo/fastdfs-client-cssharp
+
+
+1. install package 
+```
+Install-Package org.csource.fastdfs.aspnetcore -Version 1.28.0
+```
+2. append appsettings.json 
 ```
 "Fastdfs": {
-  "TrackerServers": ["<SERVER IP1>:<SERVER PORT1>","<SERVER IP2>:<SERVER PORT2>"], //required, for example: ["192.168.1.100:22122"]
-  "ConnectTimeout": null,
-  "NetworkTimeout": null,
-  "Charset": null,
-  "AntiStealToken": null,
-  "SecretKey": null,
-  "TrackerHttpPort": null
+    "TrackerServers": [ "<SERVER IP>:<SERVER PORT>" ], //required, for example: ["192.168.1.100:22122","192.168.1.200:22122"]
+    "ConnectTimeout": 2,
+    "NetworkTimeout": 30,
+    "Charset": "UTF-8",
+    "AntiStealToken": false,
+    "SecretKey": "FastDFS1234567890",
+    "TrackerHttpPort": 8080,
+    "ConnectionPoolEnabled": true,
+    "ConnectionPoolMaxCountPerEntry": 500,
+    "ConnectionPoolMaxIdleTime": 3600,
+    "ConnectionPoolMaxWaitTime": 1000
 },
 ```
-2. add service
+3. add service
 ```
 public void ConfigureServices(IServiceCollection services)
 {
@@ -23,7 +35,7 @@ public void ConfigureServices(IServiceCollection services)
     //...
 }
 ```
-3. use
+4. use
 ```
 private readonly IFdfsClient _client;
 

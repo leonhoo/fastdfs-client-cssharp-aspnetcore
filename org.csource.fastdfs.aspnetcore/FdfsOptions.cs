@@ -32,5 +32,21 @@ namespace org.csource.fastdfs.aspnetcore
         /// FastDFS Tracker Servers, Required
         /// </summary>
         public string[] TrackerServers { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool? ConnectionPoolEnabled { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public int? ConnectionPoolMaxCountPerEntry { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public int? ConnectionPoolMaxIdleTime { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public int? ConnectionPoolMaxWaitTime { get; set; }
     }
 }
